@@ -11,10 +11,10 @@ body {
 }
 
 #container {
-    width: 360px;
+    width: 400px;
     margin: 100px auto;
     background-color: #f7f7f7;
-    box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+    box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.3);
 }
 
 .completed {
@@ -30,6 +30,10 @@ h1 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
+}
+
+.fa-plus {
+    float: right;
 }
 
 ul {
@@ -56,10 +60,28 @@ input {
     width: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus {
     background-color: white;
     border: 3px solid #383433;
     outline: none;
+}
+
+li span {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
 }
